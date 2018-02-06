@@ -14,6 +14,7 @@ class Mirror():
         self.extensions = ['.jpeg','.png','.jpg','.bmp']
         
     def mirror_folder(self,folderPath):
+        """ This method mirrors all the folder with mentioned extensions in __init__ """
         
         # getting directory path
         self.folderPath = os.path.dirname(folderPath)
@@ -29,6 +30,7 @@ class Mirror():
         print('Mirrored')
     
     def mirror_file(self,filePath):
+        """ This method mirror image with mentioned extensions in __init__ """
         
         # getting file path
         self.pathToFile = filePath
